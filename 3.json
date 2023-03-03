@@ -1,0 +1,2821 @@
+﻿{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 5,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 60,
+      "options": {
+        "bgColor": "",
+        "clockType": "24 hour",
+        "countdownSettings": {
+          "endCountdownTime": "2023-03-02T22:46:36+07:00",
+          "endText": "00:00:00"
+        },
+        "countupSettings": {
+          "beginCountupTime": "2023-03-02T22:46:36+07:00",
+          "beginText": "00:00:00"
+        },
+        "dateSettings": {
+          "dateFormat": "DD-MM-YYYY",
+          "fontSize": "20px",
+          "fontWeight": "normal",
+          "locale": "",
+          "showDate": true
+        },
+        "mode": "time",
+        "refresh": "sec",
+        "timeSettings": {
+          "fontSize": "40px",
+          "fontWeight": "bold"
+        },
+        "timezone": "Asia/Ho_Chi_Minh",
+        "timezoneSettings": {
+          "fontSize": "12px",
+          "fontWeight": "normal",
+          "showTimezone": false,
+          "zoneFormat": "offsetAbbv"
+        }
+      },
+      "pluginVersion": "2.1.2",
+      "transparent": true,
+      "type": "grafana-clock-panel"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#FADE2A",
+        "#37872D",
+        "#FADE2A"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 16,
+        "x": 4,
+        "y": 0
+      },
+      "id": 62,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "-10000",
+          "text": "HỆ THỐNG QUẢ NGHIỀN",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "110%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "MIND SMART IOT",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 20,
+        "y": 0
+      },
+      "id": 64,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "valueSize": 20
+        },
+        "textMode": "name"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "MADE BY ",
+      "type": "stat"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 3
+      },
+      "id": 66,
+      "panels": [
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 0,
+            "y": 4
+          },
+          "highlightOnMouseover": true,
+          "id": 32,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 1",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 6,
+            "y": 4
+          },
+          "highlightOnMouseover": true,
+          "id": 68,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 2",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 12,
+            "y": 4
+          },
+          "highlightOnMouseover": true,
+          "id": 70,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 3",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 18,
+            "y": 4
+          },
+          "highlightOnMouseover": true,
+          "id": 72,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 4",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 0,
+            "y": 7
+          },
+          "highlightOnMouseover": true,
+          "id": 74,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 5",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 6,
+            "y": 7
+          },
+          "highlightOnMouseover": true,
+          "id": 76,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 6",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 12,
+            "y": 7
+          },
+          "highlightOnMouseover": true,
+          "id": 78,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 7",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 18,
+            "y": 7
+          },
+          "highlightOnMouseover": true,
+          "id": 80,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 8",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 0,
+            "y": 10
+          },
+          "highlightOnMouseover": true,
+          "id": 82,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 9",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 6,
+            "y": 10
+          },
+          "highlightOnMouseover": true,
+          "id": 84,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 10",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 12,
+            "y": 10
+          },
+          "highlightOnMouseover": true,
+          "id": 86,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 11",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 18,
+            "y": 10
+          },
+          "highlightOnMouseover": true,
+          "id": 88,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 12",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 0,
+            "y": 13
+          },
+          "highlightOnMouseover": true,
+          "id": 90,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 13",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        },
+        {
+          "backgroundColor": "rgba(128,128,128,0.1)",
+          "colorMaps": [
+            {
+              "$$hashKey": "object:141658",
+              "color": "#37872D",
+              "text": "RUN"
+            },
+            {
+              "$$hashKey": "object:141965",
+              "color": "#F2495C",
+              "text": "STOP"
+            }
+          ],
+          "crosshairColor": "#8F070C",
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "display": "timeline",
+          "expandFromQueryS": 0,
+          "extendLastValue": true,
+          "gridPos": {
+            "h": 3,
+            "w": 6,
+            "x": 6,
+            "y": 13
+          },
+          "highlightOnMouseover": true,
+          "id": 92,
+          "legendSortBy": "-ms",
+          "lineColor": "rgba(0,0,0,0.1)",
+          "metricNameColor": "#000000",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:141663",
+              "from": "20",
+              "text": "RUN",
+              "to": "1000"
+            },
+            {
+              "$$hashKey": "object:141963",
+              "from": "-1000",
+              "text": "STOP",
+              "to": "20"
+            }
+          ],
+          "rowHeight": 50,
+          "showLegend": true,
+          "showLegendNames": true,
+          "showLegendPercent": true,
+          "showLegendValues": true,
+          "showTimeAxis": true,
+          "textSize": 24,
+          "textSizeTime": 12,
+          "timeOptions": [
+            {
+              "name": "Years",
+              "value": "years"
+            },
+            {
+              "name": "Months",
+              "value": "months"
+            },
+            {
+              "name": "Weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "Days",
+              "value": "days"
+            },
+            {
+              "name": "Hours",
+              "value": "hours"
+            },
+            {
+              "name": "Minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "Seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "Milliseconds",
+              "value": "milliseconds"
+            }
+          ],
+          "timePrecision": {
+            "name": "Minutes",
+            "value": "minutes"
+          },
+          "timeTextColor": "#d8d9da",
+          "title": "Quả 14",
+          "type": "natel-discrete-panel",
+          "units": "short",
+          "use12HourClock": false,
+          "useTimePrecision": false,
+          "valueMaps": [
+            {
+              "$$hashKey": "object:142032",
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueTextColor": "#000000",
+          "writeAllValues": false,
+          "writeLastValue": true,
+          "writeMetricNames": false
+        }
+      ],
+      "title": "Trạng thái",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 4
+      },
+      "id": 28,
+      "panels": [
+        {
+          "blendName": "min",
+          "colorBackground": false,
+          "colorPostfix": false,
+          "colorPrefix": false,
+          "colorValue": true,
+          "colors": [
+            "#FADE2A",
+            "#73BF69",
+            "#FADE2A"
+          ],
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "description": "",
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "gridPos": {
+            "h": 1,
+            "w": 24,
+            "x": 0,
+            "y": 5
+          },
+          "id": 100,
+          "links": [],
+          "mappingType": 2,
+          "mappingTypes": [
+            {
+              "$$hashKey": "object:7462",
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "$$hashKey": "object:7463",
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:7515",
+              "from": "-10000",
+              "text": "Quả 1",
+              "to": "1000000"
+            }
+          ],
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "tableColumn": "",
+          "thresholds": "",
+          "type": "farski-blendstat-panel",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "$$hashKey": "object:7518",
+              "op": "=",
+              "text": "",
+              "value": ""
+            }
+          ],
+          "valueName": "min"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "displayName": "kWh",
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "yellow"
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 4,
+            "x": 0,
+            "y": 6
+          },
+          "id": 36,
+          "options": {
+            "orientation": "horizontal",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showThresholdLabels": false,
+            "showThresholdMarkers": true
+          },
+          "pluginVersion": "9.4.1",
+          "title": "Tổng năng lượng tiêu thụ 1",
+          "transparent": true,
+          "type": "gauge"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "orange"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "A-series"
+                },
+                "properties": [
+                  {
+                    "id": "color",
+                    "value": {
+                      "fixedColor": "semi-dark-yellow",
+                      "mode": "fixed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 20,
+            "x": 4,
+            "y": 6
+          },
+          "id": 34,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "title": "Năng lượng tiêu thụ 1",
+          "transparent": true,
+          "type": "timeseries"
+        },
+        {
+          "blendName": "min",
+          "colorBackground": false,
+          "colorPostfix": false,
+          "colorPrefix": false,
+          "colorValue": true,
+          "colors": [
+            "#FADE2A",
+            "#73BF69",
+            "#FADE2A"
+          ],
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "description": "",
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "gridPos": {
+            "h": 1,
+            "w": 24,
+            "x": 0,
+            "y": 12
+          },
+          "id": 104,
+          "links": [],
+          "mappingType": 2,
+          "mappingTypes": [
+            {
+              "$$hashKey": "object:7462",
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "$$hashKey": "object:7463",
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:7515",
+              "from": "-10000",
+              "text": "Quả 2",
+              "to": "1000000"
+            }
+          ],
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "tableColumn": "",
+          "thresholds": "",
+          "type": "farski-blendstat-panel",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "$$hashKey": "object:7518",
+              "op": "=",
+              "text": "",
+              "value": ""
+            }
+          ],
+          "valueName": "min"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "displayName": "kWh",
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "yellow"
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 4,
+            "x": 0,
+            "y": 13
+          },
+          "id": 106,
+          "options": {
+            "orientation": "horizontal",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showThresholdLabels": false,
+            "showThresholdMarkers": true
+          },
+          "pluginVersion": "9.4.1",
+          "title": "Tổng năng lượng tiêu thụ 1",
+          "transparent": true,
+          "type": "gauge"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "orange"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "A-series"
+                },
+                "properties": [
+                  {
+                    "id": "color",
+                    "value": {
+                      "fixedColor": "semi-dark-yellow",
+                      "mode": "fixed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 20,
+            "x": 4,
+            "y": 13
+          },
+          "id": 108,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "title": "Năng lượng tiêu thụ 1",
+          "transparent": true,
+          "type": "timeseries"
+        }
+      ],
+      "title": "Năng lượng tiêu thụ",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 5
+      },
+      "id": 58,
+      "panels": [
+        {
+          "blendName": "min",
+          "colorBackground": false,
+          "colorPostfix": false,
+          "colorPrefix": false,
+          "colorValue": true,
+          "colors": [
+            "#FADE2A",
+            "#73BF69",
+            "#FADE2A"
+          ],
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "description": "",
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "gridPos": {
+            "h": 1,
+            "w": 24,
+            "x": 0,
+            "y": 6
+          },
+          "id": 102,
+          "links": [],
+          "mappingType": 2,
+          "mappingTypes": [
+            {
+              "$$hashKey": "object:7462",
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "$$hashKey": "object:7463",
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:7515",
+              "from": "-10000",
+              "text": "Quả 1",
+              "to": "1000000"
+            }
+          ],
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "tableColumn": "",
+          "thresholds": "",
+          "type": "farski-blendstat-panel",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "$$hashKey": "object:7518",
+              "op": "=",
+              "text": "",
+              "value": ""
+            }
+          ],
+          "valueName": "min"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "displayName": "minutes",
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "dark-blue"
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 4,
+            "x": 0,
+            "y": 7
+          },
+          "id": 30,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "center",
+            "orientation": "horizontal",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "text": {
+              "valueSize": 40
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "9.4.1",
+          "title": "Thời gian hoạt động ",
+          "transparent": true,
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "stepBefore",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "orange"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "A-series"
+                },
+                "properties": [
+                  {
+                    "id": "color",
+                    "value": {
+                      "fixedColor": "dark-blue",
+                      "mode": "fixed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 20,
+            "x": 4,
+            "y": 7
+          },
+          "id": 94,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "title": "Thời gian hoạt động ",
+          "transparent": true,
+          "type": "timeseries"
+        },
+        {
+          "blendName": "min",
+          "colorBackground": false,
+          "colorPostfix": false,
+          "colorPrefix": false,
+          "colorValue": true,
+          "colors": [
+            "#FADE2A",
+            "#73BF69",
+            "#FADE2A"
+          ],
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "description": "",
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "gridPos": {
+            "h": 1,
+            "w": 24,
+            "x": 0,
+            "y": 13
+          },
+          "id": 110,
+          "links": [],
+          "mappingType": 2,
+          "mappingTypes": [
+            {
+              "$$hashKey": "object:7462",
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "$$hashKey": "object:7463",
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "$$hashKey": "object:7515",
+              "from": "-10000",
+              "text": "Quả 2",
+              "to": "1000000"
+            }
+          ],
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "tableColumn": "",
+          "thresholds": "",
+          "type": "farski-blendstat-panel",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "$$hashKey": "object:7518",
+              "op": "=",
+              "text": "",
+              "value": ""
+            }
+          ],
+          "valueName": "min"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "displayName": "minutes",
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "dark-blue"
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 4,
+            "x": 0,
+            "y": 14
+          },
+          "id": 112,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "center",
+            "orientation": "horizontal",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "text": {
+              "valueSize": 40
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "9.4.1",
+          "title": "Thời gian hoạt động ",
+          "transparent": true,
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "stepBefore",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "orange"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "A-series"
+                },
+                "properties": [
+                  {
+                    "id": "color",
+                    "value": {
+                      "fixedColor": "dark-blue",
+                      "mode": "fixed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 20,
+            "x": 4,
+            "y": 14
+          },
+          "id": 114,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "title": "Thời gian hoạt động ",
+          "transparent": true,
+          "type": "timeseries"
+        }
+      ],
+      "title": "Thời gian hoạt động",
+      "type": "row"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 6
+      },
+      "id": 98,
+      "panels": [],
+      "title": "Bảng tổng hợp - báo cáo",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "grafana",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 7
+      },
+      "id": 96,
+      "options": {
+        "footer": {
+          "countRows": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "9.4.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "Bảng tổng hợp",
+      "type": "table"
+    }
+  ],
+  "refresh": "",
+  "revision": 1,
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "isNone": true,
+          "selected": false,
+          "text": "None",
+          "value": ""
+        },
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "definition": "",
+        "hide": 0,
+        "includeAll": false,
+        "label": "QuaNghien",
+        "multi": false,
+        "name": "QuaNghien",
+        "options": [],
+        "query": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "3. Hệ thống quả ngiềng",
+  "uid": "uO8OoLxVk",
+  "version": 22,
+  "weekStart": ""
+}

@@ -1,0 +1,2138 @@
+﻿{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 2,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 82,
+      "options": {
+        "bgColor": "",
+        "clockType": "24 hour",
+        "countdownSettings": {
+          "endCountdownTime": "2023-03-02T22:46:36+07:00",
+          "endText": "00:00:00"
+        },
+        "countupSettings": {
+          "beginCountupTime": "2023-03-02T22:46:36+07:00",
+          "beginText": "00:00:00"
+        },
+        "dateSettings": {
+          "dateFormat": "DD-MM-YYYY",
+          "fontSize": "20px",
+          "fontWeight": "normal",
+          "locale": "",
+          "showDate": true
+        },
+        "mode": "time",
+        "refresh": "sec",
+        "timeSettings": {
+          "fontSize": "40px",
+          "fontWeight": "bold"
+        },
+        "timezone": "Asia/Ho_Chi_Minh",
+        "timezoneSettings": {
+          "fontSize": "12px",
+          "fontWeight": "normal",
+          "showTimezone": false,
+          "zoneFormat": "offsetAbbv"
+        }
+      },
+      "pluginVersion": "2.1.2",
+      "transparent": true,
+      "type": "grafana-clock-panel"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#FADE2A",
+        "#37872D",
+        "#FADE2A"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 16,
+        "x": 4,
+        "y": 0
+      },
+      "id": 84,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "-10000",
+          "text": "HỆ THỐNG GIÁM SÁT KHU NGUYÊN LIỆU",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "110%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "MIND SMART IOT",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 20,
+        "y": 0
+      },
+      "id": 86,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "valueSize": 20
+        },
+        "textMode": "name"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "MADE BY ",
+      "type": "stat"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#FF9830",
+        "#F2495C",
+        "#37872D"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 15,
+        "x": 0,
+        "y": 3
+      },
+      "id": 2,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "-10000",
+          "text": "Hệ thống trộn nguyên liệu",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "title": "1. Material Mixing System",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "50%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#37872D",
+        "#F2495C",
+        "#FF9830"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 5,
+        "x": 15,
+        "y": 3
+      },
+      "id": 40,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "0",
+          "text": "Bể khuấy nổi",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "title": "3. Floating stirring tank",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "50%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#37872D",
+        "#F2495C",
+        "#FF9830"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 20,
+        "y": 3
+      },
+      "id": 44,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "0",
+          "text": "Bể khuấy chìm",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "title": "4. Sanking Stirring Tank",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "50%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 5
+      },
+      "id": 88,
+      "title": "Cân 1",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 50,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 50,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "Kg",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 2,
+        "y": 5
+      },
+      "id": 60,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Khối lượng 1",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 5,
+        "y": 5
+      },
+      "id": 6,
+      "title": "Cân 2",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 50,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 50,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "Kg",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 7,
+        "y": 5
+      },
+      "id": 62,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Khối lượng 2",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 10,
+        "y": 5
+      },
+      "id": 8,
+      "title": "Cân 3",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 50,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 50,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "Kg",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 12,
+        "y": 5
+      },
+      "id": 64,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Khối lượng 3",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 16,
+        "y": 5
+      },
+      "id": 42,
+      "title": "Bể 1",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 20,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 20,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 21,
+        "y": 5
+      },
+      "id": 46,
+      "title": "Bể 1",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 30,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 30,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#37872D",
+        "#F2495C",
+        "#FF9830"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 15,
+        "x": 0,
+        "y": 9
+      },
+      "id": 10,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "0",
+          "text": "Hệ thống quả nghiền",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "title": "2. Crushing System",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "50%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#37872D",
+        "#F2495C",
+        "#FF9830"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 15,
+        "y": 9
+      },
+      "id": 52,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "0",
+          "text": "Tháp sấy phun",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "title": "5. Spray Srying Tower",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "50%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 11
+      },
+      "id": 12,
+      "title": "Quả 1",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 10,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 10,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 2,
+        "y": 11
+      },
+      "id": 14,
+      "title": "Quả 2",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 80,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 80,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 4,
+        "y": 11
+      },
+      "id": 16,
+      "title": "Quả 3 ",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 50,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 50,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 6,
+        "y": 11
+      },
+      "id": 18,
+      "title": "Quả 4",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 90,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 90,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 8,
+        "y": 11
+      },
+      "id": 20,
+      "title": "Quả 5",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 80,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 80,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 10,
+        "y": 11
+      },
+      "id": 22,
+      "title": "Quả 6",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 50,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 50,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 12,
+        "y": 11
+      },
+      "id": 24,
+      "title": "Quả 7",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 20,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 20,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 16,
+        "y": 11
+      },
+      "id": 50,
+      "title": "Tháp 1",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 60,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 60,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "Kg",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 19,
+        "y": 11
+      },
+      "id": 66,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Khối lượng",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 15
+      },
+      "id": 26,
+      "title": "Quả 8",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 70,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 70,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 2,
+        "y": 15
+      },
+      "id": 28,
+      "title": "Quả 9",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 60,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 60,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 4,
+        "y": 15
+      },
+      "id": 30,
+      "title": "Quả 10",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 40,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 40,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 6,
+        "y": 15
+      },
+      "id": 32,
+      "title": "Quả 11",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 50,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 20,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 8,
+        "y": 15
+      },
+      "id": 34,
+      "title": "Quả 12",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 20,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 20,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 10,
+        "y": 15
+      },
+      "id": 36,
+      "title": "Quả 13 ",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 50,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 50,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 12,
+        "y": 15
+      },
+      "id": 38,
+      "title": "Quả 14",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 20,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 20,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "stepBefore",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 8,
+        "x": 15,
+        "y": 15
+      },
+      "id": 70,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "title": "Cumulative Volume",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#37872D",
+        "#F2495C",
+        "#FF9830"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 10,
+        "x": 0,
+        "y": 19
+      },
+      "id": 48,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "0",
+          "text": "Lò tầng sôi",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "title": "6. HAG",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "50%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "blendName": "min",
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorPrefix": false,
+      "colorValue": true,
+      "colors": [
+        "#37872D",
+        "#F2495C",
+        "#FF9830"
+      ],
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "description": "",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 14,
+        "x": 10,
+        "y": 19
+      },
+      "id": 58,
+      "links": [],
+      "mappingType": 2,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:7462",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:7463",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:7515",
+          "from": "0",
+          "text": "Silo chứa",
+          "to": "1000000"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "thresholds": "",
+      "title": "7. Silo",
+      "type": "farski-blendstat-panel",
+      "valueFontSize": "50%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:7518",
+          "op": "=",
+          "text": "",
+          "value": ""
+        }
+      ],
+      "valueName": "min"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 21
+      },
+      "id": 54,
+      "title": "Lò 1",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 90,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 90,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "oC",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 2,
+        "y": 21
+      },
+      "id": 72,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Nhiệt độ",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "Kg",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 6,
+        "y": 21
+      },
+      "id": 74,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Khối lượng",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "Độ cao (m)",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 15,
+        "y": 21
+      },
+      "id": 80,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Slio 1",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 25
+      },
+      "id": 56,
+      "title": "Lò 2",
+      "trafficLightSettings": {
+        "digits": 1,
+        "fontColor": "black",
+        "fontSize": "0",
+        "greenThreshold": 50,
+        "invertScale": false,
+        "lightsPerLine": 1,
+        "linkTargetBlank": false,
+        "linkTooltip": "",
+        "linkUrl": "",
+        "max": 100,
+        "redThreshold": 50,
+        "renderLink": false,
+        "showTrend": false,
+        "showValue": false,
+        "sortLights": false,
+        "spreadControls": true,
+        "units": "",
+        "width": 35
+      },
+      "transparent": true,
+      "type": "snuids-trafficlights-panel"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "oC",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 2,
+        "y": 25
+      },
+      "id": 76,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Nhiệt độ",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "grafana"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "Kg",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 6,
+        "y": 25
+      },
+      "id": 78,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.4.1",
+      "title": "Khối lượng",
+      "transparent": true,
+      "type": "stat"
+    }
+  ],
+  "refresh": "1m",
+  "revision": 1,
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "1. Home Dashboard",
+  "uid": "ZQ0qD-bVk",
+  "version": 17,
+  "weekStart": ""
+}
